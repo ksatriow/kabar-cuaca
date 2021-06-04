@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KabarCuaca</string>
+    <string name="search">Search</string>
+    <string name="today">Today</string>
+    <string name="find_city_weather">Masukkan kota yang Anda cari</string>
+    <string name="find_for_a_city">Carilah cuaca kotamu</string>
+    <string name="logo">Kabar Cuaca</string>
+</resources>
