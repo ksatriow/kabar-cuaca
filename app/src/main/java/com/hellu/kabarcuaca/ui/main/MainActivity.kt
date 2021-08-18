@@ -1,10 +1,12 @@
 package com.hellu.kabarcuaca.ui.main
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DefaultItemAnimator
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.hellu.kabarcuaca.R
 import com.hellu.kabarcuaca.adapter.CityAdapter
 import com.hellu.kabarcuaca.databinding.ActivityMainBinding
+import com.hellu.kabarcuaca.ui.history.HistoryActivity
 import com.hellu.kabarcuaca.utils.*
 import com.hellu.kabarcuaca.viewmodel.ViewModelFactory
 import org.kodein.di.KodeinAware
@@ -39,6 +42,10 @@ class MainActivity : AppCompatActivity(), KodeinAware {
 
     private fun setupUI() {
         initializeRecyclerView()
+        dataBind.history.setOnClickListener {
+            val intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent);
+        }
         dataBind.inputFindCityWeather.setOnEditorActionListener { view, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
                 viewModel.getWeatherFromDatabase((view as EditText).text.toString())

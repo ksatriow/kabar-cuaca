@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KabarCuaca"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.main.MainActivity"></activity>
+        <activity android:name=".ui.history.HistoryActivity"></activity>
+        <activity android:name=".ui.main.MainActivity" />
         <activity
             android:name=".ui.splash.SplashActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
@@ -22,6 +23,7 @@
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

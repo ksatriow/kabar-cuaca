@@ -82,6 +82,17 @@
                 android:padding="16dp"
                 android:visibility="gone">
 
+                <TextView
+                    android:id="@+id/history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="History"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycler_view_searched_city_temperature"
                     android:layout_width="match_parent"
@@ -90,7 +101,7 @@
                     android:paddingRight="16dp"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/history"
                     tools:itemCount="10"
                     android:orientation="horizontal"
                     tools:listitem="@layout/list_city_weather" />
@@ -177,8 +188,6 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.core.widget.NestedScrollView>
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
