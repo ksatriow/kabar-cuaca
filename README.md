@@ -15,4 +15,4 @@ Cari dan temukan cuaca di kota Anda
 ### State and Activity
 |Splash                 |   Home             |   Search      |   History |
 |:------------------:|:----------------------------:|:---------------------:|:-----------------:|
-| <span align="center"><img width="200px" height="360px" src="screenshot/splash.png"></span> | <span align="center"><img width="200px" height="360px" src="screenshot/home.png"></span> | <span align="center"><img width="200px" height="360px" src="screenshot/seach.png"></span> | <span align="center"><img width="200px" height="360px" src="screenshot/history.png"></span> |
+| <span align="center"><img width="200px" height="360px" src="screenshot/splash.png"></span> | <span align="center"><img width="200px" height="360px" src="screenshot/home.png"></span> | <span align="center"><img width="200px" height="360px" src="screenshot/search.png"></span> | <span align="center"><img width="200px" height="360px" src="screenshot/history.png"></span> |
