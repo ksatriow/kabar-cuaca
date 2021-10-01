@@ -1,6 +1,10 @@
 # KabarCuaca
 Cari dan temukan cuaca di kota Anda
 
+<p align="center">
+  <img src="./screenshot/banner.png" height="auto" width="100%">
+</p>
+
 ## Specs & Open-source libraries
 - Minimum SDK 16
 - 100% Kotlin based
